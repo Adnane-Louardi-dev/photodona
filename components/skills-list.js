@@ -1,0 +1,51 @@
+const projectsList = [
+   {
+      id: 1,
+      name: "React.js",
+      description: "javascript library based on conponents to build complex UI",
+      image: "/react-logo.svg",
+      color: "#53c1de",
+      background: "rgb(83, 193, 222,0.4)",
+   },
+   {
+      id: 3,
+      name: "Nextjs",
+      description: "react framework for building a SPA with SSR",
+      image: "/nextjs-logo.svg",
+      color: "#000000",
+      background: "rgb(0,0,0,0.4)",
+   },
+   {
+      id: 4,
+      name: "Tailwind",
+      description: "CSS framework help to design complex pages",
+      image: "/tailwind-logo.svg",
+      color: "#15c0b8",
+      background: "rgb(21, 192, 184,0.4)",
+   },
+   {
+      id: 5,
+      name: "Bootstrap",
+      description: "CSS framework to design resposive web pages",
+      image: "/bootstrap-logo.svg",
+      color: "#563d7c",
+      background: "rgb(86, 61, 124,0.4)",
+   },
+   {
+      id: 6,
+      name: "Jquery",
+      description: "Javascript library to make animation on your web pages",
+      image: "/jquery-logo.svg",
+      color: "#21609b",
+      background: "rgb(33, 96, 155,0.4)",
+   },
+   {
+      id: 7,
+      name: "javascript",
+      description: "programming language to scripting web pages",
+      image: "/javascript-logo.svg",
+      color: "#f7df1e",
+      background: "rgb(247, 223, 30,0.4)",
+   },
+];
+export default projectsList;

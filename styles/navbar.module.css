@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.nav {
+   display: inline-flex;
+   padding-top: 10px;
+   font-family: "Poppins", sans-serif;
+}
+.envelopeCont {
+   height: 40px;
+   background-color: #4c3dd9;
+   border-radius: 5px;
+   padding: 7px;
+   display: inline-flex;
+}
+.envelopeCont .email {
+   color: white;
+   margin: 2px 0 0 20px;
+}
+.navItems {
+   list-style-type: none;
+   height: 40px;
+}
+.navItems .navItem {
+   display: inline-block;
+
+   margin-top: 10px;
+}

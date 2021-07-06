@@ -1,0 +1,65 @@
+.presCont {
+   border-radius: 25px;
+   background-color: hsla(29, 17%, 67%, 0.4);
+}
+.presCont .presText {
+   float: left;
+   margin-top: 10%;
+   margin-left: 8vw;
+}
+.presCont .presText .presHello {
+   color: #3f3f3f;
+   margin: 0 0 10px 0;
+   font-size: 1.5rem;
+   line-height: 1;
+   letter-spacing: 0.07em;
+   font-weight: 500;
+}
+.presCont .presText .presName {
+   line-height: 1.4;
+   letter-spacing: 0.35em;
+   font-weight: 800;
+}
+.presCont .presText .presAbout {
+   font-size: 1.2rem;
+   line-height: 1.2;
+   letter-spacing: -0.002em;
+   font-style: normal;
+   font-weight: 500;
+}
+.presCont .presText .presBtn {
+   border-radius: 20px;
+   padding: 0px 15px;
+
+   height: 40px;
+   background-color: #4c3dd9;
+   border: none;
+   color: white;
+   margin-left: -5px;
+   margin-top: 10px;
+}
+
+.presImg {
+   height: 400px;
+   width: 90%;
+   background-color: #b9aa9c;
+   border-radius: 25px;
+   margin-top: 15%;
+   margin-bottom: 15%;
+   overflow: hidden;
+}
+.presPort {
+   position: relative;
+   height: 450px;
+   width: 350px;
+}
+.presCircle {
+   position: absolute;
+
+   height: 200px;
+   width: 200px;
+   margin-left: 15%;
+   margin-top: 60px;
+   border-radius: 50%;
+   background-color: #4c3dd9;
+}
