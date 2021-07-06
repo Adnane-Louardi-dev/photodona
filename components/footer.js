@@ -2,11 +2,11 @@ import styles from "../styles/footer.module.css";
 import Image from "next/image";
 const Footer = () => {
    return (
-      <footer class={`${styles.footer} mt-5`}>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 py-5">
-                  <div class="my-1 flex-center d-flex justify-content-center">
+      <footer className={`${styles.footer} mt-5`}>
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12 py-5">
+                  <div className="my-1 flex-center d-flex justify-content-center">
                      <a className="mx-4">
                         <Image
                            src="/socialMediaIcons/facebook.svg"
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
          </div>
 
-         <div class={`${styles.subFooter} text-center py-3`}>
+         <div className={`${styles.subFooter} text-center py-3`}>
             <a style={{ color: "white" }}>
                © 2021 Copyright: Make with ❤︎ by me
             </a>

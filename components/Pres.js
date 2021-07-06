@@ -1,5 +1,5 @@
 import styles from "../styles/pres.module.css";
-
+import Image from "next/image";
 const Pres = () => {
    return (
       <div className="container-fluid ">
@@ -25,10 +25,11 @@ const Pres = () => {
                <div className={styles.presImg + " mx-auto"}>
                   <div className={styles.presCircle}></div>
                   <div className="mx-auto  d-flex justify-content-center">
-                     <img
+                     <Image
                         src="/portfolio.png"
-                        className={styles.presPort + ""}
                         alt="portfolio"
+                        height={450}
+                        width={350}
                      />
                   </div>
                </div>

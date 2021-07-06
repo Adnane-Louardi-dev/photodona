@@ -1,5 +1,6 @@
 import styles from "../styles/projects.module.css";
 import projectsList from "./project-list";
+import Image from "next/image";
 const Projects = () => {
    return (
       <>
@@ -20,9 +21,10 @@ const Projects = () => {
                      className={styles.projCont + " col-12 col-md-5 my-3 mt-5 "}
                   >
                      <div className={styles.projImg + " h-75 my-3 mx-2"}>
-                        <img
+                        <Image
                            src={image}
-                           className={styles.img}
+                           height={150}
+                           width={150}
                            alt="project image"
                         />
                      </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 .presCont {
    border-radius: 25px;
    background-color: hsla(29, 17%, 67%, 0.4);
@@ -6,6 +7,7 @@
    float: left;
    margin-top: 10%;
    margin-left: 8vw;
+   font-family: "Lato", sans-serif;
 }
 .presCont .presText .presHello {
    color: #3f3f3f;
@@ -22,7 +24,7 @@
 }
 .presCont .presText .presAbout {
    font-size: 1.2rem;
-   line-height: 1.2;
+   line-height: 1.5;
    letter-spacing: -0.002em;
    font-style: normal;
    font-weight: 500;
@@ -50,12 +52,9 @@
 }
 .presPort {
    position: relative;
-   height: 450px;
-   width: 350px;
 }
 .presCircle {
    position: absolute;
-
    height: 200px;
    width: 200px;
    margin-left: 15%;

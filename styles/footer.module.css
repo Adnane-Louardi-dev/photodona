@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .footer {
    background-color: rgb(65, 65, 104);
    border-radius: 25px 25px 0 0;
+   font-family: "Poppins", sans-serif;
 }
 .subFooter {
    background-color: rgb(54, 54, 85);

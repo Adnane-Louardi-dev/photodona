@@ -1,5 +1,6 @@
 import styles from "../styles/skills.module.css";
 import projectsList from "./skills-list";
+import Image from "next/image";
 const Skills = () => {
    return (
       <div className="container-fluid">
@@ -24,10 +25,12 @@ const Skills = () => {
                      }}
                   >
                      <div className={styles.skillImg + " mx-auto my-4"}>
-                        <img
+                        <Image
                            src={image}
                            alt={name}
-                           className={styles.image + " mx-auto"}
+                           className=" mx-auto"
+                           height={100}
+                           width={150}
                         />
                      </div>
                      <div className={styles.skillTitleCont + " text-center"}>
