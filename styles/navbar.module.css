@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .navBar {
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .nav {
    display: inline-flex;
@@ -25,4 +24,44 @@
 .navItems .navItem {
    display: inline-block;
    margin-top: 10px;
+}
+.subNavbar {
+   overflow: hidden;
+
+   height: 500px;
+}
+.bgImg {
+   height: 100%;
+   background-image: url("../public/violet-flours.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: blur(1px);
+}
+.textArea {
+   font-family: "Poppins", sans-serif;
+   position: absolute;
+   top: 20%;
+   color: azure;
+   font-size: 20px;
+   line-height: 45px;
+   letter-spacing: 0.108em;
+   font-style: normal;
+}
+.backgroundImg {
+   opacity: 0.5;
+}
+.textAreaInput {
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   display: inline-flex;
+   background-color: azure;
+}
+.searchBtn {
+   height: 50px;
+   width: 55px;
+   background-color: #9a27cf;
+   border: none;
+   border-radius: 5px;
 }
