@@ -5,18 +5,24 @@ import styles from "../styles/Home.module.css";
 import { useRef, useState } from "react";
 const Photos = ({ photos }) => {
    const imgInfo = useRef(null);
-   const [popuped, setPopuped] = useState(false);
-   const photoClicked = () => {
-      setPopuped(!popuped);
+   const [popuped, setPopuped] = useState({
+      open: false,
+   });
+   const photoClicked = (imageSrc, title, username, userImageSrc, download_location, imageHeight, imageWidth, likes, name, instaAccount, userAccount) => {
+      return () => setPopuped({ open: true, title, username, userImageSrc, download_location, imageSrc, imageHeight, imageWidth, likes, name, instaAccount, userAccount });
    };
-   const { small, alt_description, height, width } = photos;
    return (
       <>
          <div className={`container`}>
             <div className="row gx-5">
                {photos.map((photo) => (
                   <>
-                     <div className={`${styles.flex_column} col-12 col-md-6 col-lg-4 my-3`} key={photo.id} ref={imgInfo} onClick={photoClicked}>
+                     <div
+                        className={`${styles.flex_column} col-12 col-md-6 col-lg-4 my-3`}
+                        key={photo.id}
+                        ref={imgInfo}
+                        onClick={photoClicked(photo.urls.regular, photo.description, photo.user.username, photo.user.profile_image.medium, photo.links.download, photo.height, photo.width, photo.likes, photo.user.social.instagram_username, photo.user.social.portfolio_url, photo.user.links.self)}
+                     >
                         <div className={`${styles.imgCont}`} style={{ backgroundColor: photo.color, height: "100%", width: "100%" }}>
                            <Image src={photo.urls.small} width={photo.width} height={photo.height} alt={photo.alt_description} className={`${styles.image}`} />
                         </div>
@@ -52,7 +58,22 @@ const Photos = ({ photos }) => {
                </Link> */}
             </div>
          </div>
-         <div className="popup">{popuped ? <PopUp title={alt_description} /> : null}</div>
+         {popuped.open ? (
+            <PopUp
+               title={popuped.title}
+               imageSrc={popuped.imageSrc}
+               username={popuped.username}
+               userImageSrc={popuped.userImageSrc || "/vercel.svg"}
+               download_location={popuped.download_location || "google.com"}
+               imageHeight={popuped.imageHeight}
+               imageWidth={popuped.imageWidth}
+               likes={popuped.likes || 0}
+               name={popuped.name}
+               instaAccount={popuped.instaAccount}
+               userAccount={popuped.userAccount}
+               overlayClicked={() => setPopuped({ open: false })}
+            />
+         ) : null}
       </>
    );
 };

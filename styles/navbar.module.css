@@ -15,7 +15,6 @@
 }
 .envelopeCont .email {
    color: white;
-   margin: 2px 0 0 5%;
 }
 .navItems {
    list-style-type: none;
@@ -26,22 +25,15 @@
    margin-top: 10px;
 }
 .subNavbar {
-   overflow: hidden;
-
-   height: 500px;
-}
-.bgImg {
-   height: 100%;
    background-image: url("../public/violet-flours.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   filter: blur(1px);
+   /* filter: blur(1px); */
 }
+
 .textArea {
    font-family: "Poppins", sans-serif;
-   position: absolute;
-   top: 20%;
    color: azure;
    font-size: 20px;
    line-height: 45px;
@@ -61,7 +53,6 @@
 .searchBtn {
    height: 50px;
    width: 55px;
-   background-color: #9a27cf;
    border: none;
    border-radius: 5px;
 }

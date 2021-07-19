@@ -18,7 +18,7 @@ const Page = () => {
    const [photos, setPhotos] = useState([]);
    useEffect(() => {
       const API_KEY = "K83D7htjgyhEZilliweiQpbVCLsBNkKZWEcpSqioG4E";
-      const URL = `https://api.unsplash.com/photos/?per_page=15&client_id=${API_KEY}`;
+      const URL = `https://api.unsplash.com/photos/?per_page=30&client_id=${API_KEY}`;
 
       fetch(URL)
          .then((response) => response.json())
