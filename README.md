@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Photodona - Photo Discovery Platform**
 
-## Getting Started
+A modern web application for discovering, searching, and downloading high-quality stock photos powered by the Unsplash API. Built with Next.js, this platform offers an intuitive interface for browsing millions of professional photographs with advanced filtering and search capabilities.
 
-First, run the development server:
+**Key Features:**
+- 🔍 Advanced search functionality with real-time results
+- 🎨 Filter photos by categories, colors, and orientations
+- ⬇️ One-click photo downloads in multiple resolutions
+- 📱 Fully responsive design for all devices
+- ⚡ Optimized performance with Next.js server-side rendering
+- 🎯 Clean, user-friendly interface
 
+**Tech Stack:**
+- Next.js - React framework with SSR
+- Unsplash API - High-quality photo library integration
+- JavaScript/React
+- CSS/Styled Components
+
+**Use Cases:**
+- Designers seeking inspiration and assets
+- Content creators looking for royalty-free images
+- Developers exploring API integration patterns
+
+**Getting Started:**
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to explore the platform locally.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**API Integration:**
+This project demonstrates practical API consumption, state management, and dynamic content rendering—valuable skills for modern web development.
